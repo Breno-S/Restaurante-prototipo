@@ -1,0 +1,376 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Geral */
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+/* Menu de cima */
+#cabecalho_total{
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.404);
+    padding: 10px;
+    padding-bottom: 5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+}
+
+/* ==== parte 1 do cabeçalho ==== */
+#cabecalho1{
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    border: black;
+}
+#botao_latartine:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+#botao_latartine{
+    border: white;
+    background: transparent;
+}
+#img_botao_latartine{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+/* ==== parte 2 do cabeçalho ===== */
+#cabecalho2{
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+}
+#botao_home{
+    border: white;
+    color: #0576B0;
+    font-weight: bold;
+    background: transparent;
+}
+#botao_home:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+#botao_cardapio{
+    border: white;
+    font-weight: lighter;
+    background: transparent;
+}
+
+#botao_cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+#botao_contato{
+    border: white;
+    background: transparent;
+}
+#botao_contato:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+
+/* ==== parte 3 do cabeçalho ==== */
+#cabecalho3{
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    text-align: right!important;
+}
+#botao_facebook{
+    border: white;
+    background: transparent;
+}
+#botao_facebook:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_facebook{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+#botao_instagram{
+    border: white;
+    background: transparent;
+}
+#botao_instagram:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_instagram{
+    height: 30px;
+    width: 30px;
+}
+
+#botao_linkedin{
+    border: white;
+    background: transparent;
+}
+#botao_linkedin:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_linkedin{
+    height: 30px;
+    width: 30px;
+}
+
+#botao_conta{
+    border: white;
+    background: transparent;
+}
+#botao_conta:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_conta{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+/* ==== fim do cabeçalho ==== */
+
+/* Diminui o texto para mobile */
+@media (max-width: 767px){
+    /* Obsoleto */
+    /* .col-md-0{
+        margin: 0px;
+    }
+    
+    .col-md-1{
+        margin: 0px;
+    }
+    #cima{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+        background-color: white;
+        min-height: 50px;
+        overflow-x: hidden;
+    }
+    
+    #icone{
+        max-height: 50px;
+        margin-left: 10px;
+    }
+    
+    #nomerest{
+        font-size: 32px;
+    }
+    
+    #menu{
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+        padding-top: 10px;
+    }
+    
+    #link{
+        text-decoration: none;
+        color: black;
+        font-weight: normal;
+    }
+    
+    #insta{
+        max-height: 30px;
+    }
+    
+    #conta{
+        font-size: 24px;
+        text-align: right;
+    }
+    
+    #perfil{
+        max-height: 50px;
+         background-color: #0576B0;
+        border-radius: 50px;
+        
+    } */
+
+    /* Parte central */
+    #meio{
+        overflow-x: hidden;
+        padding-top: 50px;
+    }
+    
+    /* Estilização das imagens no carrossel */
+    .carousel {
+        border-radius: 75px 75px 0px 0px;
+        max-width: 1500px;
+        overflow: hidden;
+        align-content: center;
+    }
+    
+    #imgslider{
+        filter: blur(4px) brightness(70%);
+        width: 100%;
+    }
+    
+    #txtslider{
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    /* Texto abaixo do carrossel */
+    #recomenda{
+        text-align: center;
+        margin-top: 20px;
+        padding-top: auto;
+        font-size: 30px;
+        background-color: #0576B0;
+        color: white;
+        max-width: 1110px;
+        max-height: 150px;
+        border-radius: 0px 0px 75px 75px;
+    }
+}
+
+@media (min-width: 768px){
+    /* Obsoleto */
+    /* .col-md-0{
+        margin: 0px;
+    }
+    
+    .col-md-1{
+        margin: 0px;
+    }
+
+    #cima{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+        min-height: 50px;
+        overflow-x: hidden;
+    }
+    
+    #icone{
+        max-height: 50px;
+        margin-left: 20px;
+    }
+    
+    #nomerest{
+        font-size: 32px;
+    }
+    
+    #menu{
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: left;
+        padding-top: 5px;
+    }
+    
+    #link{
+        text-decoration: none;
+        color: black;
+        font-weight: normal;
+    }
+    
+    #insta{
+        max-height: 30px;
+    }
+    
+    #conta{
+        margin-top: 10px    ;
+        font-size: 24px;
+        text-align: right;
+    }
+    
+    #perfil{
+        max-height: 50px;
+         background-color: #0576B0;
+        border-radius: 50px;
+        
+    } */
+    
+    /* Parte central */
+    #meio{
+        overflow-x: hidden;
+        padding-top: 50px;
+    }
+    
+    /* Estilização das imagens do carrossel */
+    .carousel {
+        border-radius: 75px 75px 0px 0px;
+        max-width: 1500px;
+        max-height: 675px;
+        overflow: hidden;
+        align-content: center;
+    }
+    
+    #imgslider{
+        filter: blur(4px) brightness(70%);
+        width: 100%;
+    }
+    
+    #txtslider{
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    /* Texto abaixo do carrossel */
+    #recomenda{
+        text-align: center;
+        margin-top: 20px;
+        padding-top: auto;
+        font-size: 70px;
+        background-color: #0576B0;
+        color: white;
+        max-width: 1110px;
+        max-height: 150px;
+        border-radius: 0px 0px 75px 75px;
+    }
+
+}
+
+#fim{
+    color: white;
+    background-color: #0576B0;
+    margin: none;
+    min-height: 300px;
+    margin-top: 50px;
+    /* border-style: inset;
+    border-width: 0px 0px 30px 0px;
+    border-color: #02517A; */
+}
+
+#iconebaixo{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+#menubaixo1{
+    margin-top: 60px;
+}
+
+.menubaixo {
+    color: white;
+}
+
+.active {
+    font-weight: bold;
+}
+
+#opcoesbaixo{
+    text-decoration: none;
+    color: white;
+}
+
+#topo{
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: #0576B0;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+#botao{
+    text-decoration: none;
+}

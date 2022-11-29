@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+#cabecalho_total{
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.404);
+    padding: 10px;
+    padding-bottom: 5px;
+    background-color: #fff;
+}
+
+.texto{
+    font-family: 'Nunito', sans-serif; 
+}
+/* ==== parte 1 do cabeçalho ==== */
+#cabecalho1{
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    border: black;
+}
+#botao_latartine:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+#botao_latartine{
+    border: white;
+}
+#img_botao_latartine{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+#botao_offcanvas{
+    border: white;
+}
+#botao_offcanvas:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+/* ==== parte 2 do cabeçalho ===== */
+#cabecalho2{
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+}
+#botao_home{
+    border: white;
+}
+#botao_home:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+#botao_cardapio{
+    border: white;
+    color: #0576B0;
+}
+#botao_cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+#botao_contato{
+    border: white;
+}
+#botao_contato:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+
+/* ==== parte 3 do cabeçalho ==== */
+#cabecalho3{
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+}
+#botao_facebook{
+    border: white;
+}
+#botao_facebook:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_facebook{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+#botao_instagram{
+    border: white;
+}
+#botao_instagram:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_instagram{
+    height: 30px;
+    width: 30px;
+}
+
+#botao_linkedin{
+    border: white;
+}
+#botao_linkedin:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_linkedin{
+    height: 30px;
+    width: 30px;
+}
+
+#botao_conta{
+    border: white;
+}
+#botao_conta:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_conta{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+/* ==== fim do cabeçalho ==== */
+
+/* ==== inicio barra lateral ==== */
+#mid_total{
+    height: 100%;
+}
+
+#caixa_lateral{
+    background-color: #ffffff;
+    margin-top: 50%;
+    border-radius: 10px;
+}
+
+
+/* ==== fim barra lateral ==== */
+
+/* ==== inicio cardapio ==== */
+
+.titulos_cardapio{
+    font-family: 'Nunito', sans-serif;
+    color: #0576B0;
+}
+
+/* .img_cards{
+    
+} */
+.row{
+    justify-content: center;
+}
+.card{
+    margin: 1em;
+}
+
+#fim{
+    color: white;
+    background-color: #0576B0;
+    margin: none;
+    min-height: 300px;
+    margin-top: 50px;
+    /* border-style: inset;
+    border-width: 0px 0px 30px 0px;
+    border-color: #02517A; */
+}
+
+
+.menubaixo {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+#menubaixo1{
+    margin-top: 60px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+#iconebaixo{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+#opcoesbaixo{
+    text-decoration: none;
+    color: white;
+}
+
+#topo{
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: #0576B0;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+#botao{
+    text-decoration: none;
+}

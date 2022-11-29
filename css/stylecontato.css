@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* GERAL */
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+#container {
+    margin: 2em 0;
+}
+
+/* HEADER */
+
+#topNav {
+    box-shadow: 1px 1px 4px;
+    font-size: 32px;
+}
+
+#topNav a {
+    color: black !important;
+    text-decoration: none;
+}
+
+#navLogo {
+    border-radius: 10px !important;
+}
+
+.navbar-brand {
+    font-size: 32px;
+}
+
+#navbarNav {
+    justify-content: center;
+}
+
+#navbarNav a.active {
+    color: #0576B0 !important;
+}
+
+#botao {
+    text-decoration: none;
+}
+
+#cabecalho_total{
+    background-color: #fff;;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.404);
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+/* ==== parte 1 do cabeçalho ==== */
+#cabecalho1{
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    border: black;
+}
+#botao_latartine:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+#botao_latartine{
+    border: white;
+}
+#img_botao_latartine{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+#botao_offcanvas{
+    border: white;
+}
+#botao_offcanvas:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+/* ==== parte 2 do cabeçalho ===== */
+#cabecalho2{
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+}
+#botao_home{
+    border: white;
+}
+#botao_home:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+#botao_cardapio{
+    border: white;
+}
+#botao_cardapio:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+#botao_contato{
+    border: white;
+    color: #0576B0;
+}
+#botao_contato:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+
+/* ==== parte 3 do cabeçalho ==== */
+#cabecalho3{
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+}
+#botao_facebook{
+    border: white;
+}
+#botao_facebook:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_facebook{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+#botao_instagram{
+    border: white;
+}
+#botao_instagram:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_instagram{
+    height: 30px;
+    width: 30px;
+}
+
+#botao_linkedin{
+    border: white;
+}
+#botao_linkedin:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_linkedin{
+    height: 30px;
+    width: 30px;
+}
+
+#botao_conta{
+    border: white;
+}
+#botao_conta:hover{
+    background-color: rgba(0, 0, 0, 0.103); 
+}
+#img_conta{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+
+/* MAIN */
+
+main {
+    margin: 2em 0;
+}
+
+#main-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.half {
+    width: 50%;
+    padding: 1em;
+}
+
+/* FOOTER */
+
+footer{
+    color: white !important;
+}
+
+#footer-container {
+    padding: 1em;
+}
+
+footer .navbar {
+    flex-wrap: nowrap;
+}
+
+nav .logo {
+    height: 200px !important;
+    width: 200px;
+    border-radius: 25px;
+}
+
+nav .container {
+    justify-content: flex-start !important;
+}
+
+.navbar-nav a, footer a{
+    color: white !important; 
+}
+
+nav a.active {
+    font-weight: 700 !important;
+}
+
+#footer-nav {
+    font-size: 24px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 991px) {
+    #main-div {
+        flex-direction: column;
+    }
+    
+    .half {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .container {
+        flex-wrap: wrap !important;
+        justify-content: space-evenly !important;
+    }
+    
+    footer h3 {
+        margin-top: 0.5em;
+    }
+}    
+
+@media (max-width: 665px) {
+    .navbar-brand {
+       width: 100%; 
+    }   
+}    
+
+@media (max-width: 576px) {
+    main .container {
+        padding-right: 1em;
+        padding-left: 1em;
+    }    
+}    
+
+@media (max-width: 340px) {
+    #footer-nav {
+        flex-direction: row !important;
+        align-items: center !important;  
+        justify-content: center !important;  
+    }
+}
+
+@media (min-width: 340px) {
+    #footer-nav {
+        justify-content: space-between;
+    }
+}

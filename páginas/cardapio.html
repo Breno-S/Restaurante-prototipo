@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Latartine Bistrot</title>
+    <link rel="shortcut icon" href="../img/Latartine_Icon.png" type="image/x-icon">
+</head>
+
+<body > 
+    <!-- min width 544 -->
+
+    <header class="container-fluid sticky-top" id="cabecalho_total">
+
+        <div class="row g-0">
+            <div class="col">
+                <div id="cabecalho1">
+                    <a id="link" href="../index.html">
+                        <button type="button" class="btn" id="botao_latartine">
+                            <img src="../img/Latartine_Icon2.jpg" id="img_botao_latartine" alt="Icone Latartine">
+                            Latartine Bistrot
+                        </a>
+                    </button>
+                    <button class="btn" type="button" id="botao_offcanvas" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        Ver Produtos
+                    </button>
+                </div>
+    
+            </div>
+            <div class="col text-center">
+                <div id="cabecalho2">
+                    <a id="link" href="../index.html">
+                        <button type="button" id="botao_home" class="btn">Home</button>
+                    </a>
+                    <button type="button" id="botao_cardapio" class="btn"><b>Cardápio</b></button>
+                    <a id="link" href="./contato.html">
+                        <button type="button" id="botao_contato" class="btn">Contato</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col text-end">
+                <div id="cabecalho3">
+                    <button type="button" id="botao_facebook" class="btn">
+                        <img src="../img/Facebook_Icon.svg" id="img_facebook" alt="Icone Facebook">
+                    </button>
+                    <a href="https://www.instagram.com/latartinebistrot/" target="_blank" id="botao">
+                        <button type="button" id="botao_instagram" class="btn">
+                            <img src="../img/Instagram_icon.png" id="img_instagram" alt="Icone Instagram">
+                        </button>
+                    </a>
+                    <button type="button" id="botao_linkedin" class="btn">
+                        <img src="../img/Linkedin_icon.png" id="img_linkedin" alt="Icone Linkedin">
+                    </button>
+                    <button type="button" id="botao_conta" class="btn">
+                        Conta
+                        <img src="../img/Anonimo_Icon.png" id="img_conta" alt="Icone Conta">
+                    </button>
+                </div>
+            </div>
+        </div> 
+    
+    </header>
+
+   <div class="container-fluid-md align-items-center" id="mid_total">
+       <div class="raw">
+           <div class="col">
+
+            <!-- ==== OFF CANVAS ==== -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Produtos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">Entradas</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-2">Pratos Principais</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">Quiches</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-4">Saladas</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-5">Porções</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-6">Croques</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-7">Sobremesas</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-8">Les Vins Rouges</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-9">Les Vins Blancs</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-10">Les Vins Rosês</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-11">Prosecco</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-12">Bebidas</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ==== FIM DO OFF CANVAS ====  -->
+
+            <!-- ==== CARDAPIO CONECTADO AO OFF CANVAS ==== -->
+
+            <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example text-center">
+                <br>
+                <h4 id="list-item-1" class="titulos_cardapio">Entradas</h4>
+                <br>
+
+                    <div class="container text-center" style="display: grid;">
+                        <div class="row">
+    
+                                 <!-- ==== CARD 01 ==== -->
+    
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../img/Entradas/petits_toats_au_chevre_chaud.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Petits Toats Au Chèvre Chaud</b></h5>
+                                        <p class="card-text texto">Torradinhas com Queijo de Cabra - 6 unidades.</p>
+                                        <br>
+                                        <p class="card-text texto"><b>R$ 19,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                        
+    
+                                 <!-- ==== CARD 02 ==== -->
+    
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../img/Entradas/sopa_de_agriao.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Sopa de Agrião</b></h5>
+                                        <p class="card-text texto">Com croutons</p>
+                                        <br>
+                                        <br>
+                                        <p class="card-text texto"><b>R$ 23,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                           
+    
+                                 <!-- ==== CARD 03 ==== -->
+    
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../img/Entradas/sopa_de_cebola.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Sopa de Cebola</b></h5>
+                                        <p class="card-text texto">Acompanhado de Torrada Gruyere</p>
+                                        <br>
+                                        <br>
+                                        <p class="card-text texto"><b>R$ 25,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                           
+    
+                                 <!-- ==== CARD 04 ==== -->
+    
+                                <div class="card " style="width: 18rem;">
+                                    <img src="../img/Entradas/tartine_tapenade.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Tartine Tapenade</b></h5>
+                                        <p class="card-text texto">Torradinhas com patê de azeitonas pretas - 6 unidades.</p>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <p class="card-text texto"><b>R$ 19,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+        
+    
+                                 <!-- ==== CARD 05 ==== -->
+    
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../img/Entradas/pate_de_campagne.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Paté de Campagne</b></h5>
+                                        <p class="card-text texto">Paté de lombo com baguette</p>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <p class="card-text texto"><b>R$ 28,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+        
+    
+                                 <!-- ==== CARD 06 ==== -->
+    
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../img/Entradas/pate_de_figado.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Paté de Figado</b></h5>
+                                        <p class="card-text texto">Acompanha baguette</p>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        
+                                        <p class="card-text texto"><b>R$ 28,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+    
+    
+                                 <!-- ==== CARD 07 ==== -->
+    
+                                <div class="card" style="width: 18rem;">
+                                    <img src="../img/Entradas/vol_au_vent.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Vol au Vent</b></h5>
+                                        <p class="card-text texto">Folhado recheado com frango ao molho bechamel e champignons de paris - 2 unidades.</p>
+                                        <p class="card-text texto"><b>R$ 34,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+        
+                            <!-- </div> -->
+
+                        </div>    
+                    </div>
+                
+                
+                   
+                <h4 id="list-item-2" class="titulos_cardapio">Pratos Principais</h4>
+                <br>
+                    <div class="container">
+                        <div class="row">
+                            
+                             <!-- ==== CARD 08 ==== -->
+
+                                <div class="card " style="width: 18rem;">
+                                    <img src="../img/Pratos do Dia/Boeuf Bourguignon -Cozido de carne ao vinho tinto.PNG" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Boeuf Bourguignon</b></h5>
+                                        <p class="card-text texto">Cozido de carne no vinho tinto, acompanha massa espaguete, cebolinha caramelizada e torradinha de alho.</p>
+                                        <p class="card-text texto"><b>R$ 61,00</b></p>
+                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                
+
+                             <!-- ==== CARD 09 ==== -->
+
+                                <div class="card " style="width: 18rem;">
+                                    <img src="../img/Pratos do Dia/Couscous Marroquino.PNG" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Couscous Marroquino</b></h5>
+                                        <p class="card-text texto">Cozido de cordeiro, frango e legumes, servido com semolina e linguiça picante</p>
+                                        <p class="card-text texto"><b>R$ 76,00</b></p>
+                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                         
+
+                            <!-- ==== CARD 10 ==== -->
+
+                                <div class="card " style="width: 18rem;">
+                                    <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Filé Mignon ao Molho de Três Pimentas</b></h5>
+                                        <p class="card-text texto">Filé Mignon ao molho de três pimentas com salada verde com molho mostarda dijon + um acompanhamento</p>
+                                        <p class="card-text texto"><b>R$ 66,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+
+
+                            <!-- ==== CARD 11 ==== -->
+
+                                <div class="card " style="width: 18rem;">
+                                    <img src="../img/Pratos do Dia/Peito de pato ao mel e vinagre balsamico.PNG" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Peito de Pato ao Mel e Vinagre Balsâmico</b></h5>
+                                        <p class="card-text texto">Peito de pato com molho de mel e vinagre balsâmico, acompanha purê rústico de abóbora ou batata gratinada.</p>
+                                        <p class="card-text texto"><b>R$ 69,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>  
+
+
+                            <!-- ==== CARD 12 ==== -->
+
+                                <div class="card " style="width: 18rem;">
+                                    <img src="../img/Entradas/pate_de_campagne.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Filé Mignon ao Molho Mostarda</b></h5>
+                                        <p class="card-text texto">Filé mignon com molho de mostarda Dijon e salada verde + um acompanhamento</p>                                      
+                                        <p class="card-text texto"><b>R$ 66,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+    
+
+                                <!-- ==== CARD 13 ==== -->
+
+                                <div class="card " style="width: 18rem;">
+                                    <img src="../img/Pratos do Dia/Steak sauce moutarde.PNG" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Paté de Figado</b></h5>
+                                        <p class="card-text texto">Acompanha baguette</p>
+                                        <p class="card-text texto"><b>R$ 28,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+
+
+                                <!-- ==== CARD 14 ==== -->
+
+                                <div class="card " style="width: 18rem;">
+                                    <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title texto"><b>Steak ao Molho Roquefort</b></h5>
+                                        <p class="card-text texto">Filé-mignon ao molho de queijo roquefort ,um acompanhamento e salada com molho dijon</p>
+                                        <p class="card-text texto"><b>R$ 66,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+
+                    </div> 
+
+                </div>
+            
+                    
+                <h4 id="list-item-3" class="titulos_cardapio">Quiches</h4>
+                <br>
+                    <div class="container">
+                        <div class="row">
+                        <!-- ==== CARD 15 ==== -->
+
+                             <div class="card " style="width: 18rem;">
+                                <img src="../img/Quiches/Quiche Chèvre Et Tomates.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Quiche Chevrè et Tomates - Queijo de Cabra</b></h5>
+                                    <p class="card-text texto">Acompanha salada verde com Tomate e molho dijon.</p>
+                                    <p class="card-text texto"><b>R$ 46,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+            
+
+                         <!-- ==== CARD 16 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Quiches/Quiche Lorraine.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Quiche Lorraine - Bacon e Queijo</b></h5>
+                                    <p class="card-text texto">Acompanha salada verde com tomate e molho dijon.</p>
+                                    <br>
+                                    <p class="card-text texto"><b>R$ 46,00</b></p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                     
+
+                        <!-- ==== CARD 17 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Quiches/Quiche Lorraine.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Quiche Poireaux - Alho Poró e Queijo</b></h5>
+                                    <p class="card-text texto">Acompanha salada verde com Tomate e molho dijon.</p>
+                                    <br>
+                                    <p class="card-text texto"><b>R$ 46,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+
+                        <!-- ==== CARD 18 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Quiches/Quiche Oignons.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Quiche Oignons - Cebola e Queijo</b></h5>
+                                    <p class="card-text texto">Acompanha salada verde com molho dijon.</p>
+                                    <br>
+                                    <p class="card-text texto"><b>R$ 46,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>  
+
+
+                        <!-- ==== CARD 19 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Quiches Inteiras/Chevre et Tomates - Queijo de cabra e tomate.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Chevrè et Tomates - Queijo de Cabra e Tomate (Inteira)</b></h5>
+                                    <p class="card-text texto">
+                                        Quiche de queijo de cabra e tomates.
+                                        Forma de 30 cm de diâmetro, rende entre 6 e 8 pedaços.
+                                        As quiches inteiras são entregues frias, para serem esquentadas na hora de servir.</p>
+                                    <br>
+                                    <br>
+                                    <p class="card-text texto"><b>R$ 110,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+
+                            <!-- ==== CARD 20 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Quiches Inteiras/Lorraine - bacon e queijo.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Lorraine - Bacon e Queijo</b></h5>
+                                    <p class="card-text texto">
+                                        Quiche de Bacon.
+                                        Forma de 30 cm de diâmetro, rende entre 6 e 8 pedaços.
+                                        As quiches inteiras são entregues frias, para serem esquentadas na hora de servir.</p>
+                                    <br>
+                                    <br>
+                                    <p class="card-text texto"><b>R$ 110,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+
+                            <!-- ==== CARD 21 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Quiches Inteiras/Oignons - cebola e queijo.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Oignons - Cebola e Queijo</b></h5>
+                                    <p class="card-text texto">
+                                        Quiche de Cebola e queijo.
+                                        Forma de 30 cm de diâmetro, rende entre 6 e 8 pedaços.
+                                        As quiches inteiras são entregues frias, para serem esquentadas na hora de servir.</p>
+                                    <p class="card-text texto"><b>R$ 110,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+
+                            <!-- ==== CARD 22 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Quiches Inteiras/Lorraine - bacon e queijo.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Poireaux - Alho Poró e Queijo</b></h5>
+                                    <p class="card-text texto">Quiche de Alho Poró e queijo.
+                                        Forma de 30 cm de diâmetro, rende entre 6 e 8 pedaços.
+                                        As quiches inteiras são entregues frias, para serem esquentadas na hora de servir.</p>
+                                    <p class="card-text texto"><b>R$ 110,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                                        
+                    
+                <h4 id="list-item-4" class="titulos_cardapio">Saladas</h4>
+                <br>
+                <div class="container">
+                    <div class="row">
+                         <!-- ==== CARD 23 ==== -->
+
+                         <div class="card " style="width: 18rem;">
+                            <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title texto"><b>Salada Niçoise</b></h5>
+                                <p class="card-text texto">Salada verde, anchovas, alcachofra, ovo, vagem, atum e tomate</p>
+                                <p class="card-text texto"><b>R$ 42,00</b></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+
+                         <!-- ==== CARD 24 ==== -->
+
+                         <div class="card " style="width: 18rem;">
+                            <img src="../img/Saladas/Salada Gourmande.PNG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title texto"><b>Salada Gourmande</b></h5>
+                                <p class="card-text texto">Salada verde, queijo brie, damasco e croutons</p>
+                                <p class="card-text texto"><b>R$ 42,00</b></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+
+                         <!-- ==== CARD 25 ==== -->
+
+                         <div class="card " style="width: 18rem;">
+                            <img src="../img/Saladas/Salada Verde.PNG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title texto"><b>Salada Verde</b></h5>
+                                <p class="card-text texto">Mix de folhas verdes com tomate e molho dijon.</p>
+                                <p class="card-text texto"><b>R$ 19,00</b></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+
+                         <!-- ==== CARD 26 ==== -->
+
+                         <div class="card " style="width: 18rem;">
+                            <img src="../img/Saladas/Salada de queijo de cabra.PNG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title texto"><b>Salada de Queijo de Cabra</b></h5>
+                                <p class="card-text texto">Salada de folhas verdes com 3 torradas de queijo de cabra gratinado e tomate. Temperado com molho dijon.</p>
+                                <p class="card-text texto"><b>R$ 36,00</b></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                        
+                         <!-- ==== CARD 27 ==== -->
+
+                         <div class="card " style="width: 18rem;">
+                            <img src="../img/Saladas/Salada de Paris.PNG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title texto"><b>Salada de Paris</b></h5>
+                                <p class="card-text texto">Salada de folhas verdes, bacon, maçã e queijo gruyère, molho de mostarda dijon.</p>
+                                <p class="card-text texto"><b>R$ 36,00</b></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <h4 id="list-item-5" class="titulos_cardapio">Porções</h4>
+                <br>
+                <div class="container">
+                    <div class="row">
+                    <!-- ==== CARD 28 ==== -->
+
+                         <div class="card " style="width: 18rem;">
+                            <img src="../img/Porções/Arroz Branco.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title texto"><b>Arroz Branco</b></h5>
+                                <p class="card-text texto">Uma porção de arroz branco.</p>
+                                <p class="card-text texto"><b>R$ 11,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+        
+
+                     <!-- ==== CARD 29 ==== -->
+
+                        <div class="card " style="width: 18rem;">
+                            <img src="../img/Porções/Batata frita.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title texto"><b>Batata Frita</b></h5>
+                                <p class="card-text texto">Uma porção de batata frita.</p>
+                                <p class="card-text texto"><b>R$ 20,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                   
+                <h4 id="list-item-6" class="titulos_cardapio">Croques</h4>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <!-- ==== CARD 30 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Croques de Paris/Croque Tout.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Croque Tout</b></h5>
+                                    <p class="card-text texto">Sanduiche de presunto, queijo, ovo, queijo de cabra e queijo ementhal gratinado, acompanha salada verde com molho dijon.</p>
+                                    <p class="card-text texto"><b>R$ 41,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                            <!-- ==== CARD 31 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Croques de Paris/Croque Monsieur.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Croque Monsieur</b></h5>
+                                    <p class="card-text texto">Sanduiche com pão, presunto e queijo, ementhal gratinado com salada verde, acompanha: salada verde ao molho dijon.</p>
+                                    <p class="card-text texto"><b>R$ 41,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                            <!-- ==== CARD 32 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Croques de Paris/Croque Madame.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Croque Madame</b></h5>
+                                    <p class="card-text texto">Sanduiche com pão, presunto e queijo, ovo, ementhal gratinado com salada verde, acompanha: salada verde ao molho dijon.</p>
+                                    <p class="card-text texto"><b>R$ 39,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                            <!-- ==== CARD 33 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Croques de Paris/Croque Chèvre.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Croque Chèvre</b></h5>
+                                    <p class="card-text texto">Sanduiche com pão, presunto e queijo, queijo de cabra, ementhal gratinado com salada verde, acompanha: salada verde com molho dijon.</p>
+                                    <p class="card-text texto"><b>R$ 39,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+                <h4 id="list-item-7" class="titulos_cardapio">Sobremesas</h4>
+                <br>
+                    <div class="container">
+                        <div class="row">
+                            <!-- ==== CARD 34 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Sobremesas/Gâteau au Chocolat.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Gâteau au Chocolat</b></h5>
+                                    <p class="card-text texto">Bolo mousse de chocolate com creme inglês (creme de baunilha) feito com chocolate meio-amargo.</p>
+                                    <p class="card-text texto"><b>R$ 20,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 35 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Sobremesas/Profiteroles - Carolinas Recheadas.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Profiteroles - Carolinas Recheadas</b></h5>
+                                    <p class="card-text texto">Carolinas recheadas com sorvete de creme e calda de chocolate - 2 unidades</p>
+                                    <p class="card-text texto"><b>R$ 20,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 36 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/Sobremesas/maçã com sorvete de creme.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Tarte Aux Pommes</b></h5>
+                                    <p class="card-text texto">Torta de maçã com sorvete de creme.</p>
+                                    <p class="card-text texto"><b>R$ 19,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                <h4 id="list-item-8" class="titulos_cardapio">Les Vins Rouges</h4>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+
+                             <!-- ==== CARD 37 ==== -->
+
+                             <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Bordeaux Brejou - França</b></h5>
+                                    <p class="card-text texto">Bordeaux Brejou diretamente da França</p>
+                                    <p class="card-text texto"><b>R$ 145,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                             <!-- ==== CARD 38 ==== -->
+
+                             <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Vinho Rioja Bordon Crianza</b></h5>
+                                    <p class="card-text texto">Vinho Rioja Bordon Crianza</p>
+                                    <p class="card-text texto"><b>R$ 132,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                             <!-- ==== CARD 39 ==== -->
+
+                             <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Vinho Cotes du Rhône</b></h5>
+                                    <p class="card-text texto">Vinho Cotes du Rhône</p>
+                                    <p class="card-text texto"><b>R$ 120,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                             <!-- ==== CARD 40 ==== -->
+
+                             <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Vinho Nero D Avola</b></h5>
+                                    <p class="card-text texto">Vinho Nero D Avola</p>
+                                    <p class="card-text texto"><b>R$ 150,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                <h4 id="list-item-9" class="titulos_cardapio">Les Vins Blancs</h4>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+
+                            <!-- ==== CARD 41 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Bordeaux Branco - França</b></h5>
+                                    <p class="card-text texto">Bordeaux Branco diretamente da França</p>
+                                    <p class="card-text texto"><b>R$ 106,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 42 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Conha y Touro Sauvignon Blanc - Chile</b></h5>
+                                    <p class="card-text texto">Conha y Touro Sauvignon Blanc diretamente do Chile</p>
+                                    <p class="card-text texto"><b>R$ 72,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                            
+                            <!-- ==== CARD 43 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Frondoso Suavignon Blanc - Chile</b></h5>
+                                    <p class="card-text texto">Frondoso Suavignon Blanc diretamente do Chile</p>
+                                    <p class="card-text texto"><b>R$ 78,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                            
+                            <!-- ==== CARD 44 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Paris Chardonnay</b></h5>
+                                    <p class="card-text texto">Paris Chardonnay</p>
+                                    <p class="card-text texto"><b>R$ 98,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <h4 id="list-item-10" class="titulos_cardapio">Les Vins Rosês</h4>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+
+                            <!-- ==== CARD 45 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Montefusco Rosato - Italia</b></h5>
+                                    <p class="card-text texto">Montefusco Rosato diretamente da Italia</p>
+                                    <p class="card-text texto"><b>R$ 98,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 46 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Paris Malbe Rosato - Argentina</b></h5>
+                                    <p class="card-text texto">Paris Malbe Rosato diretamente da Argentina</p>
+                                    <p class="card-text texto"><b>R$ 98,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <h4 id="list-item-11" class="titulos_cardapio">Prosecco</h4>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+
+                            <!-- ==== CARD 47 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Cava Dom Roman - Espanha</b></h5>
+                                    <p class="card-text texto">Cava Dom Roman diretamente da Espanha</p>
+                                    <p class="card-text texto"><b>R$ 104,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 48 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Veuve Vernay - França</b></h5>
+                                    <p class="card-text texto">Veuve Vernay diretamente da França</p>
+                                    <p class="card-text texto"><b>R$ 98,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <h4 id="list-item-12" class="titulos_cardapio">Bebidas</h4>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+
+                            <!-- ==== CARD 49 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Água com Gás</b></h5>
+                                    <p class="card-text texto"></p>
+                                    <p class="card-text texto"><b>R$ 5,50</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 50 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Coca-Cola</b></h5>
+                                    <p class="card-text texto"></p>
+                                    <p class="card-text texto"><b>R$ 7,50</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 51 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Coca-Cola Zero</b></h5>
+                                    <p class="card-text texto"></p>
+                                    <p class="card-text texto"><b>R$ 7,50</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 52 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Guaraná Antartica</b></h5>
+                                    <p class="card-text texto"></p>
+                                    <p class="card-text texto"><b>R$ 7,50</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 53 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Guaraná Antartica Zero</b></h5>
+                                    <p class="card-text texto"></p>
+                                    <p class="card-text texto"><b>R$ 7,50</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 54 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Schweppes Citrus</b></h5>
+                                    <p class="card-text texto"></p>
+                                    <p class="card-text texto"><b>R$ 8,00</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 55 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Soda</b></h5>
+                                    <p class="card-text texto"></p>
+                                    <p class="card-text texto"><b>R$ 7,50</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 56 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Tônica</b></h5>
+                                    <p class="card-text texto"></p>
+                                    <p class="card-text texto"><b>R$ 7,50</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+
+                            <!-- ==== CARD 57 ==== -->
+
+                            <div class="card " style="width: 18rem;">
+                                <img src="../img/interrogacao.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title texto"><b>Água sem Gás</b></h5>
+                                    <p class="card-text texto"></p>
+                                    <p class="card-text texto"><b>R$ 5,50</b></p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     
+              </div>
+        </div>
+           
+           
+       </div>
+   </div> 
+
+   <!-- Menu de baixo -->
+   <footer class="container-fluid" id="fim">
+        <div class="container">
+            <div class="row align-items-center">
+            <div class="col-md-3 d-flex">
+                <img id="iconebaixo" src="../img/iconerest.jpg" alt="ícone do restaurante">
+            </div>
+            <div class="col">
+                <h4 class="menubaixo" id="menubaixo1"><a id="opcoesbaixo" href="../index.html">HOME</a></h4><br>
+                <h4 class="menubaixo active" id="menubaixo2">CARDÁPIO</h4> <br>
+                <h4 class="menubaixo" id="menubaixo3"><a id="opcoesbaixo" href="../páginas/contato.html">CONTATO</a></h4>
+            </div>
+            <div class="col-md-2 d-flex">
+                <button onclick="topFunction()" id="topo" title="Voltar ao Topo">Voltar ao Topo</button>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center p-3" style="background-color: #02517A; color:#fff">
+        © 2022 Copyright: La Tartine Bistrot
+    </div>
+  
+  <!-- Botão p/ voltar ao topo -->
+  <script src="../js/testes.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
